@@ -1,0 +1,19 @@
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Consultar Chamados
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="principal-custom">
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-list>
+        <ion-item *ngFor="let item of items">
+          {{ item }}
+        </ion-item>
+      </ion-list>
+  </ion-content>
+  
+  

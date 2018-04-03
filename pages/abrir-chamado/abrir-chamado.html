@@ -1,0 +1,27 @@
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>Novo chamado</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding class="principal-custom">
+    <ion-label class="cores-fonte" >Novo Chamado:</ion-label>
+    <ion-list>
+      <ion-item>
+        <ion-label >Selecione</ion-label>
+        <ion-select [(ngModel)]="fila">
+          <ion-option value="1">Novos Projetos</ion-option>
+          <ion-option value="2">Manutenção Sistema de Vendas</ion-option>
+          <ion-option value="3">Servidores</ion-option>
+          <ion-option value="4">Redes</ion-option>
+          <ion-option value="5">Telefonia</ion-option>
+          <ion-option value="6">Desktops</ion-option>
+        </ion-select>
+      </ion-item>
+        <ion-label class="cores-fonte" >Descrição:</ion-label>
+          <ion-textarea type="descricao" placeholder="Escreva aqui..." class="caixa-texto">
+          </ion-textarea>
+      </ion-list>
+      <button ion-button color="dark" round>Enviar</button>
+  </ion-content>
